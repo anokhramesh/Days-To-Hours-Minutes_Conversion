@@ -8,7 +8,7 @@ def days_to_units(num_of_days,conversion_unit):#function for conversion.
     elif conversion_unit =="minutes":# if user input is days and minute-apply this formula. 
         return f"{num_of_days} days are {num_of_days *24*60} minutes"
     else:
-        return "unsupported unit"    #if user input is none of the above value print-unsupported unit.
+        return "unsupported unit"    #if user input is none of the above value return-unsupported unit.
 def validate_and_execute():#function for validating the calculation.
     try:
         user_input_number =int(days_and_unit_dictionary["days"])#only convert if user input is a positive value.
