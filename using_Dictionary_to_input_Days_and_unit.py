@@ -19,13 +19,13 @@ def validate_and_execute():#function for validating the calculation.
             print("You Entered 0,Please enter a valid positive number")
         else:#if user input is a negative number-print the below message.
             print("You Entered a negative number,Not Possible conversion")
-    except ValueError:#if user input is a float value or string or character-print the belo message.
+    except ValueError:#if user input is a float value or string or character-print the below message.
         print("Your input is not a valid number")
 user_input =""# created a variable name user_input.
 while user_input != "exit":#continue loop untill the user typed a string -exit.
     user_input =input("Enter number of Days and unit(1:hours/minutes)\n")# num of days : unit(hour or minutes)
     days_and_unit = user_input.split(":")# splitting the user input to two parts with seperate a column.
-    days_and_unit_dictionary ={"days":days_and_unit[0],"unit":days_and_unit[1]}#assigning the days and unit to days_and_unit_dictionary variable.
+    days_and_unit_dictionary ={"days":days_and_unit[0],"unit":days_and_unit[1]}#assigning the days to index 0 of dictionary and unit to index 1 of dictionary.
     #print(days_and_unit_dictionary)#print the values of-days_and_unit_dictionary variable.
     #print(type(days_and_unit_dictionary))#print the type of-days_and_unit_dictionary variable.
     validate_and_execute()# calling the validate_and_execute function.
